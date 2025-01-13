@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="selection:bg-transparent selection:text-red-600 selection:shadow-blue-600 shadow-md bg-cover bg-center p-0 m-0 w-[100vw] poppins-medium" style="background-image: url('/home-banner.jpg');">
+    <style>
+        .poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+    </style>
+
+    <!-- <nav class="bg-black text-white text-base font-semibold p-4 flex justify-between min-w-full w-[100vw] items-center"> -->
+    <nav class="bg-black text-white text-base font-semibold p-4 px-7 flex justify-between min-w-full w-[100vw] items-center shadow-xl shadow-blue-700">
+        <img class="w-10 h-10 bg-blend-multiply mr-3" src="logo.png" alt="logo">
+        <ul class=" gap-8 sm:flex sm:gap-8 hidden">
+            <li>
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Services</a>
+            </li>
+        </ul>
+        <div class="flex items-center">
+            <div class="relative">
+              
+                <button class="bg-blue-600 relative px-4 py-1.5 rounded-md mx-3 z-10   shadow-[0px_0px_25px_rgba(0,0,0,0.3)] hover:shadow-blue-600  hover:scale-105 transition-all ease-in-out">Login</button>
+            </div>
+        <i id="menu-btn" class="ri-menu-line text-4xl sm:hidden cursor-pointer text-blue-500 " ></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <ul id="mobile-nav" class="bg-black fixed text-white text-base font-semibold p-4 z-[10000] flex flex-col items-center gap-6 h-[82vh] w-52 hidden transition-opacity duration-300 opacity-0">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+        <li><a class="nav-link" href="#">Services</a></li>
+        <li><button class="bg-blue-600 px-6 py-2 rounded-md mt-4 hover:text-blue ">Login</button></li>
+    </ul>
+
+    <div class="page1 h-[calc(100svh_-_72px)] w-full m-0 mx-auto flex justify-center items-center bg-gradient-to-t from-[#3b83f6d5] to-[#3b83f6e2]">
+        <div class="box-container relative w-56 h-80 mx-auto my-auto shadow-lg rounded-md sm:rounded-xl shadow-black sm:w-[80vw] sm:h-[75vh]">
+            <!-- Box 1 -->
+            <div class="box-1 absolute top-0 left-0 h-full blur-[0px] rounded-md sm:rounded-xl w-full bg-[#ffffff31]"></div>
+            <!-- Box 2 -->
+            <div class="box-2 absolute top-0 left-0 h-full w-full rounded-md sm:rounded-xl backdrop-blur-md bg-[rgba(255,255,255,0.19)] flex flex-col sm:flex-row">
+                <!-- Image Section -->
+                <div class="left w-full sm:w-[60%] h-auto sm:h-full flex justify-center items-center p-6">
+                    <img class="w-[50%] sm:w-[80%] object-cover" src="/kali-dragon-icon.svg" alt="">
+                </div>
+                <!-- Text Section -->
+                <div class="right w-full sm:w-[60%] flex flex-col justify-center items-start text-white p-6 sm:p-24">
+                    <strong class="text-md sm:text-3xl text-center sm:text-left">
+                        The most advanced
+                    </strong>
+                    <strong class="text-md sm:text-3xl text-center sm:text-left">
+                        Penetration Testing Distribution
+                    </strong>
+                    <p class="text-sm mb-5 sm:text-base mt-4 poppins-light-italic text-center hidden  sm:text-left sm:inline">
+                        Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics, and Reverse Engineering.
+                    </p>
+                   <div class="flex gap-4">
+                    <button class="mt-2 hover:bg-[#fea44c] text-[#fea44c] border-2 border-[#fea44c] rounded-lg hover:text-white  hover:shadow-[#fea44c] shadow-[0px_0px_25px_rgba(0,0,0,0.3)]  py-3 px-5 font-md transition-all ease-in-out hover:scale-95 duration-200">Download</button>
+                    <button class="mt-2 bg-[#367BF0] border-2 border-[#367BF0] rounded-lg hover:text-white hover:shadow-[#367BF0] shadow-[0px_0px_25px_rgba(0,0,0,0.3)]  py-3 px-5 font-md transition-all ease-in-out hover:scale-95">Documentation</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- JavaScript Function -->
+    <script>
+        const menutButton = document.getElementById('menu-btn').addEventListener("click",()=>{
+            showNav()
+        })
+        console.log(menutButton);
+        function showNav() {
+            console.log("clic hua");
+            const mobileNav = document.getElementById('mobile-nav');
+            mobileNav.classList.remove("opacity-0")
+            mobileNav.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

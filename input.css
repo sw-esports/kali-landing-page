@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-link {
+    @apply px-5 py-3 rounded-full shadow-lg hover:shadow-blue-600 hover:bg-blue-600;
+}
